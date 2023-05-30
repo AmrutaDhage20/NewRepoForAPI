@@ -46,24 +46,20 @@ public class GetAllProductList {
     public void getLoggerDisplay() {
         PropertyConfigurator.configure("log4j2.properties");
     }
-
     @Test(priority = 1)
     public void validateStatusCode() throws IOException {
         {
-
             baseURI = ConfigReader.getUrl();
             Response response = RestAssured.get(ConfigReader.getUrl()).then().extract().response();
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Status code is " + response.getStatusCode());
         }
     }
-
     @Test(priority = 2)
     public void validateProductList() {
         var getList = given().when().get(url).then().log().all().toString();
         logger.info("Product List is " + getList);
     }
-
     @Test(priority = 3)
     public void validateContent() {
         Response response = RestAssured.get(url).then().extract().response();
@@ -93,7 +89,6 @@ public class GetAllProductList {
             });
         }
     }
-
     @Test(priority = 4)
     public void validateLength() {
         var response = given().when().get(url).then().extract().asString();
