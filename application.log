@@ -1,0 +1,150 @@
+2023-05-30 19:42:12,140 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://automationexercise.com:443
+2023-05-30 19:42:12,155 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to automationexercise.com:443
+2023-05-30 19:42:12,345 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-05-30 19:42:12,347 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-05-30 19:42:12,347 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-05-30 19:42:12,348 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-05-30 19:42:12,348 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-05-30 19:42:12,349 DEBUG [main] DefaultClientConnection:274 - Sending request: PUT /api/brandsList HTTP/1.1
+2023-05-30 19:42:12,349 DEBUG [main] wire:73 -  >> "PUT /api/brandsList HTTP/1.1[\r][\n]"
+2023-05-30 19:42:12,350 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-05-30 19:42:12,350 DEBUG [main] wire:73 -  >> "Content-Length: 0[\r][\n]"
+2023-05-30 19:42:12,351 DEBUG [main] wire:73 -  >> "Host: automationexercise.com[\r][\n]"
+2023-05-30 19:42:12,351 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-05-30 19:42:12,352 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)[\r][\n]"
+2023-05-30 19:42:12,352 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-05-30 19:42:12,352 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-05-30 19:42:12,354 DEBUG [main] headers:278 - >> PUT /api/brandsList HTTP/1.1
+2023-05-30 19:42:12,354 DEBUG [main] headers:281 - >> Accept: */*
+2023-05-30 19:42:12,354 DEBUG [main] headers:281 - >> Content-Length: 0
+2023-05-30 19:42:12,354 DEBUG [main] headers:281 - >> Host: automationexercise.com
+2023-05-30 19:42:12,355 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-05-30 19:42:12,355 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+2023-05-30 19:42:12,355 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-05-30 19:42:13,460 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-05-30 19:42:13,462 DEBUG [main] wire:73 -  << "Date: Tue, 30 May 2023 14:12:13 GMT[\r][\n]"
+2023-05-30 19:42:13,464 DEBUG [main] wire:73 -  << "Content-Type: text/html; charset=utf-8[\r][\n]"
+2023-05-30 19:42:13,464 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2023-05-30 19:42:13,465 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-05-30 19:42:13,465 DEBUG [main] wire:73 -  << "vary: Accept,Cookie,Accept-Encoding[\r][\n]"
+2023-05-30 19:42:13,465 DEBUG [main] wire:73 -  << "referrer-policy: same-origin[\r][\n]"
+2023-05-30 19:42:13,465 DEBUG [main] wire:73 -  << "x-frame-options: DENY[\r][\n]"
+2023-05-30 19:42:13,466 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2023-05-30 19:42:13,466 DEBUG [main] wire:73 -  << "allow: OPTIONS, POST, DELETE, GET, PUT[\r][\n]"
+2023-05-30 19:42:13,467 DEBUG [main] wire:73 -  << "x-powered-by: Phusion Passenger 6.0.7[\r][\n]"
+2023-05-30 19:42:13,467 DEBUG [main] wire:73 -  << "status: 200 OK[\r][\n]"
+2023-05-30 19:42:13,467 DEBUG [main] wire:73 -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+2023-05-30 19:42:13,467 DEBUG [main] wire:73 -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=M9wHltynkAl%2BLK0EecwjtQK8tvSrpdAWZ0hnmBMepmM4v07ed3z1pJdF1rLV49qzOA404W%2FzOYF%2F7txlJxw4slKOhNCNlacGstLfWHhhfQQLTg%2FLwQh94yvXRl2IWPQlf4pqYZayFyJ5"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+2023-05-30 19:42:13,468 DEBUG [main] wire:73 -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+2023-05-30 19:42:13,468 DEBUG [main] wire:73 -  << "Server: cloudflare[\r][\n]"
+2023-05-30 19:42:13,468 DEBUG [main] wire:73 -  << "CF-RAY: 7cf79218cef385ae-BOM[\r][\n]"
+2023-05-30 19:42:13,468 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2023-05-30 19:42:13,469 DEBUG [main] wire:73 -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2023-05-30 19:42:13,469 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-05-30 19:42:13,470 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-05-30 19:42:13,470 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-05-30 19:42:13,470 DEBUG [main] headers:265 - << Date: Tue, 30 May 2023 14:12:13 GMT
+2023-05-30 19:42:13,470 DEBUG [main] headers:265 - << Content-Type: text/html; charset=utf-8
+2023-05-30 19:42:13,471 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
+2023-05-30 19:42:13,471 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-05-30 19:42:13,471 DEBUG [main] headers:265 - << vary: Accept,Cookie,Accept-Encoding
+2023-05-30 19:42:13,472 DEBUG [main] headers:265 - << referrer-policy: same-origin
+2023-05-30 19:42:13,472 DEBUG [main] headers:265 - << x-frame-options: DENY
+2023-05-30 19:42:13,473 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2023-05-30 19:42:13,473 DEBUG [main] headers:265 - << allow: OPTIONS, POST, DELETE, GET, PUT
+2023-05-30 19:42:13,473 DEBUG [main] headers:265 - << x-powered-by: Phusion Passenger 6.0.7
+2023-05-30 19:42:13,474 DEBUG [main] headers:265 - << status: 200 OK
+2023-05-30 19:42:13,474 DEBUG [main] headers:265 - << CF-Cache-Status: DYNAMIC
+2023-05-30 19:42:13,475 DEBUG [main] headers:265 - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=M9wHltynkAl%2BLK0EecwjtQK8tvSrpdAWZ0hnmBMepmM4v07ed3z1pJdF1rLV49qzOA404W%2FzOYF%2F7txlJxw4slKOhNCNlacGstLfWHhhfQQLTg%2FLwQh94yvXRl2IWPQlf4pqYZayFyJ5"}],"group":"cf-nel","max_age":604800}
+2023-05-30 19:42:13,476 DEBUG [main] headers:265 - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2023-05-30 19:42:13,476 DEBUG [main] headers:265 - << Server: cloudflare
+2023-05-30 19:42:13,476 DEBUG [main] headers:265 - << CF-RAY: 7cf79218cef385ae-BOM
+2023-05-30 19:42:13,477 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2023-05-30 19:42:13,477 DEBUG [main] headers:265 - << alt-svc: h3=":443"; ma=86400
+2023-05-30 19:42:13,490 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-05-30 19:42:13,499 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: text/html; charset=utf-8
+2023-05-30 19:42:13,501 DEBUG [main] wire:73 -  << "61[\r][\n]"
+2023-05-30 19:42:13,501 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xaa]V*J-.[0xc8][0xcf]+Nu[0xce]OIU[0xb2]R010[0xd5]QP[0xca]M-.NL[0x7][0xf1][0x95]B22[0x8b][0x15][0x8a]R[0xb]KS[0x8b]K[0x14]rSK2[0xf2]S[0x14]2[0x8b][0x15][0xf2][0xf2]K[0x14][0x8a]K[0xb][\n]"
+2023-05-30 19:42:13,501 DEBUG [main] wire:87 -  << "[0xf2][0x8b]JRS[0xf4][0x94]j[0x1][0x0][0x0][0x0][0xff][0xff][0x3][0x0][0x4][0x9b]n[0x8f]I[0x0][0x0][0x0]"
+2023-05-30 19:42:13,501 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-05-30 19:42:13,502 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2023-05-30 19:42:13,502 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-05-30 19:42:13,503 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-05-30 19:42:13,542 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@383864d5
+2023-05-30 19:42:13,542 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-05-30 19:42:14,019  INFO [main] class:37 - responseCode: 405
+2023-05-30 19:42:14,036 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://automationexercise.com:443
+2023-05-30 19:42:14,037 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to automationexercise.com:443
+2023-05-30 19:42:14,091 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-05-30 19:42:14,091 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-05-30 19:42:14,092 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-05-30 19:42:14,093 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-05-30 19:42:14,093 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-05-30 19:42:14,094 DEBUG [main] DefaultClientConnection:274 - Sending request: PUT /api/brandsList HTTP/1.1
+2023-05-30 19:42:14,094 DEBUG [main] wire:73 -  >> "PUT /api/brandsList HTTP/1.1[\r][\n]"
+2023-05-30 19:42:14,094 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-05-30 19:42:14,095 DEBUG [main] wire:73 -  >> "Content-Length: 0[\r][\n]"
+2023-05-30 19:42:14,095 DEBUG [main] wire:73 -  >> "Host: automationexercise.com[\r][\n]"
+2023-05-30 19:42:14,095 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-05-30 19:42:14,096 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)[\r][\n]"
+2023-05-30 19:42:14,096 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-05-30 19:42:14,096 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-05-30 19:42:14,097 DEBUG [main] headers:278 - >> PUT /api/brandsList HTTP/1.1
+2023-05-30 19:42:14,097 DEBUG [main] headers:281 - >> Accept: */*
+2023-05-30 19:42:14,097 DEBUG [main] headers:281 - >> Content-Length: 0
+2023-05-30 19:42:14,098 DEBUG [main] headers:281 - >> Host: automationexercise.com
+2023-05-30 19:42:14,098 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-05-30 19:42:14,098 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+2023-05-30 19:42:14,098 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-05-30 19:42:15,202 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-05-30 19:42:15,203 DEBUG [main] wire:73 -  << "Date: Tue, 30 May 2023 14:12:15 GMT[\r][\n]"
+2023-05-30 19:42:15,203 DEBUG [main] wire:73 -  << "Content-Type: text/html; charset=utf-8[\r][\n]"
+2023-05-30 19:42:15,203 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2023-05-30 19:42:15,203 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-05-30 19:42:15,203 DEBUG [main] wire:73 -  << "vary: Accept,Cookie,Accept-Encoding[\r][\n]"
+2023-05-30 19:42:15,204 DEBUG [main] wire:73 -  << "referrer-policy: same-origin[\r][\n]"
+2023-05-30 19:42:15,204 DEBUG [main] wire:73 -  << "x-frame-options: DENY[\r][\n]"
+2023-05-30 19:42:15,204 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2023-05-30 19:42:15,204 DEBUG [main] wire:73 -  << "allow: OPTIONS, POST, DELETE, GET, PUT[\r][\n]"
+2023-05-30 19:42:15,205 DEBUG [main] wire:73 -  << "x-powered-by: Phusion Passenger 6.0.7[\r][\n]"
+2023-05-30 19:42:15,205 DEBUG [main] wire:73 -  << "status: 200 OK[\r][\n]"
+2023-05-30 19:42:15,205 DEBUG [main] wire:73 -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+2023-05-30 19:42:15,205 DEBUG [main] wire:73 -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pwDmtVFp7Szy%2FIfnX9udp1DLpodxM40520oxVp3yZ4OLz476Z664RkBhH7TVNha%2BYN70kwSIwOWJnMro5bvGpsYhFB%2Fj9XIL3x6WritsFRGM1S%2BW5%2Bm2MhVDxyE6ss2JsHpPpRna%2BLIw"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+2023-05-30 19:42:15,205 DEBUG [main] wire:73 -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+2023-05-30 19:42:15,206 DEBUG [main] wire:73 -  << "Server: cloudflare[\r][\n]"
+2023-05-30 19:42:15,206 DEBUG [main] wire:73 -  << "CF-RAY: 7cf79223ba58f2ce-BOM[\r][\n]"
+2023-05-30 19:42:15,206 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2023-05-30 19:42:15,206 DEBUG [main] wire:73 -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2023-05-30 19:42:15,206 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-05-30 19:42:15,207 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-05-30 19:42:15,207 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-05-30 19:42:15,207 DEBUG [main] headers:265 - << Date: Tue, 30 May 2023 14:12:15 GMT
+2023-05-30 19:42:15,207 DEBUG [main] headers:265 - << Content-Type: text/html; charset=utf-8
+2023-05-30 19:42:15,207 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
+2023-05-30 19:42:15,208 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-05-30 19:42:15,208 DEBUG [main] headers:265 - << vary: Accept,Cookie,Accept-Encoding
+2023-05-30 19:42:15,208 DEBUG [main] headers:265 - << referrer-policy: same-origin
+2023-05-30 19:42:15,208 DEBUG [main] headers:265 - << x-frame-options: DENY
+2023-05-30 19:42:15,208 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2023-05-30 19:42:15,208 DEBUG [main] headers:265 - << allow: OPTIONS, POST, DELETE, GET, PUT
+2023-05-30 19:42:15,208 DEBUG [main] headers:265 - << x-powered-by: Phusion Passenger 6.0.7
+2023-05-30 19:42:15,209 DEBUG [main] headers:265 - << status: 200 OK
+2023-05-30 19:42:15,209 DEBUG [main] headers:265 - << CF-Cache-Status: DYNAMIC
+2023-05-30 19:42:15,209 DEBUG [main] headers:265 - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pwDmtVFp7Szy%2FIfnX9udp1DLpodxM40520oxVp3yZ4OLz476Z664RkBhH7TVNha%2BYN70kwSIwOWJnMro5bvGpsYhFB%2Fj9XIL3x6WritsFRGM1S%2BW5%2Bm2MhVDxyE6ss2JsHpPpRna%2BLIw"}],"group":"cf-nel","max_age":604800}
+2023-05-30 19:42:15,209 DEBUG [main] headers:265 - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2023-05-30 19:42:15,209 DEBUG [main] headers:265 - << Server: cloudflare
+2023-05-30 19:42:15,209 DEBUG [main] headers:265 - << CF-RAY: 7cf79223ba58f2ce-BOM
+2023-05-30 19:42:15,209 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2023-05-30 19:42:15,210 DEBUG [main] headers:265 - << alt-svc: h3=":443"; ma=86400
+2023-05-30 19:42:15,210 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-05-30 19:42:15,210 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: text/html; charset=utf-8
+2023-05-30 19:42:15,210 DEBUG [main] wire:73 -  << "61[\r][\n]"
+2023-05-30 19:42:15,211 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xaa]V*J-.[0xc8][0xcf]+Nu[0xce]OIU[0xb2]R010[0xd5]QP[0xca]M-.NL[0x7][0xf1][0x95]B22[0x8b][0x15][0x8a]R[0xb]KS[0x8b]K[0x14]rSK2[0xf2]S[0x14]2[0x8b][0x15][0xf2][0xf2]K[0x14][0x8a]K[0xb][\n]"
+2023-05-30 19:42:15,211 DEBUG [main] wire:87 -  << "[0xf2][0x8b]JRS[0xf4][0x94]j[0x1][0x0][0x0][0x0][0xff][0xff][0x3][0x0][0x4][0x9b]n[0x8f]I[0x0][0x0][0x0]"
+2023-05-30 19:42:15,212 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-05-30 19:42:15,212 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2023-05-30 19:42:15,212 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-05-30 19:42:15,212 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-05-30 19:42:15,213 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@24a2e565
+2023-05-30 19:42:15,214 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-05-30 19:42:15,224  INFO [main] class:46 - Response Message is: This request method is not supported.
