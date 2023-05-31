@@ -6,6 +6,7 @@ import java.util.Properties;
 
 public class ConfigReader {
     public static Properties getProperties() throws IOException {
+
         String userDirectory = System.getProperty("user.dir");
         FileInputStream file = new FileInputStream(userDirectory + "/config.properties");
         Properties properties = new Properties();
