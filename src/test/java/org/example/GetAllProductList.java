@@ -1,5 +1,6 @@
 package org.example;
 
+import groovy.transform.Final;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -16,7 +17,6 @@ import java.util.logging.Logger;
 import static io.restassured.RestAssured.*;
 
 public class GetAllProductList {
-
     private static String url;
     private String productId;
     private String productName;
@@ -37,7 +37,8 @@ public class GetAllProductList {
         this.productBrand = productBrand;
     }
 
-    private static Logger logger = Logger.getLogger("Product.class");
+    private static final Logger logger = Logger.getLogger("Product.class");
+
     @BeforeTest
     public void getLoggerDisplay() {
         PropertyConfigurator.configure("log4j2.properties");
@@ -88,7 +89,7 @@ public class GetAllProductList {
             });
         }
     }
-    
+
     @Test(priority = 4)
     public void validateLength() {
         var response = given().when().get(url).then().extract().asString();
