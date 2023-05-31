@@ -24,16 +24,13 @@ public class GetAllProductList {
     private String productBrand;
 
     public GetAllProductList() {
-
         try {
             url = ConfigReader.getUrl();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
-
     public GetAllProductList(String productId, String productName, String productPrice, String productBrand) {
-
         this.productId = productId;
         this.productName = productName;
         this.productPrice = productPrice;
@@ -41,7 +38,6 @@ public class GetAllProductList {
     }
 
     private static Logger logger = Logger.getLogger("Product.class");
-
     @BeforeTest
     public void getLoggerDisplay() {
         PropertyConfigurator.configure("log4j2.properties");

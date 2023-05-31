@@ -12,7 +12,6 @@ public class ConfigReader {
         properties.load(file);
         return properties;
     }
-
     public static String getUrl() throws IOException {
         return getProperties().getProperty("baseURL");
     }
