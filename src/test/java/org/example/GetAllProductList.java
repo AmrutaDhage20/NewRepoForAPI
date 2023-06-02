@@ -26,6 +26,7 @@ public class GetAllProductList {
         try {
             url = ConfigReader.getUrl();
         } catch (IOException e) {
+            logger.getLogger("Error while reading URL from ConfigReader");
             throw new RuntimeException(e);
         }
     }
@@ -36,7 +37,7 @@ public class GetAllProductList {
         this.productBrand = productBrand;
     }
 
-    private static final Logger logger = Logger.getLogger("Product.class");
+    private static final Logger logger = Logger.getLogger("GetAllProductList.class");
 
     @BeforeTest
     public void getLoggerDisplay() {

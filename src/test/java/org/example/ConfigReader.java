@@ -3,6 +3,8 @@ package org.example;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import org.apache.log4j.Logger;
+
 
 public class ConfigReader {
     public static Properties getProperties() throws IOException {
