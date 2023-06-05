@@ -38,7 +38,6 @@ public class GetAllProductList {
     }
 
     private static final Logger logger = Logger.getLogger("GetAllProductList.class");
-
     @BeforeTest
     public void getLoggerDisplay() {
         PropertyConfigurator.configure("log4j2.properties");
