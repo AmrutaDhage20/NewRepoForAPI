@@ -28,19 +28,19 @@ public class GetAllProductList {
         try {
             url = ConfigReader.getUrl();
         } catch (IOException e) {
+            logger.getLogger("Error while reading URL from ConfigReader");
             throw new RuntimeException(e);
         }
     }
 
     public GetAllProductList(String productId, String productName, String productPrice, String productBrand) {
-
         this.productId = productId;
         this.productName = productName;
         this.productPrice = productPrice;
         this.productBrand = productBrand;
     }
 
-    private static Logger logger = Logger.getLogger("Product.class");
+    private static Logger logger = Logger.getLogger("GetAllProductList.class");
 
     @BeforeTest
     public void getLoggerDisplay() {
@@ -50,7 +50,6 @@ public class GetAllProductList {
     @Test(priority = 1)
     public void validateStatusCode() throws IOException {
         {
-
             baseURI = ConfigReader.getUrl();
             Response response = RestAssured.get(ConfigReader.getUrl()).then().extract().response();
             Assert.assertEquals(response.getStatusCode(), 200);
