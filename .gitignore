@@ -1,0 +1,35 @@
+##############################
+## Java
+##############################
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+##############################
+## Eclipse
+##############################
+.settings/
+bin/
+out/
+tmp/
+.metadata
+.classpath
+.project
+*.tmp
+*.bak
+*.iml
+*.swp
+*~.nib
+local.properties
+.loadpath
+.factorypath
+.idea
+/bin/
+/.idea/
+/out/
+/target/
