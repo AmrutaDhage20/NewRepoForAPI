@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import static io.restassured.RestAssured.*;
@@ -28,8 +29,7 @@ public class GetAllProductList {
         try {
             url = ConfigReader.getUrl();
         } catch (IOException e) {
-            logger.getLogger("Error while reading URL from ConfigReader");
-            throw new RuntimeException(e);
+            logger.log(Level.SEVERE,"Error while reading URL from ConfigReader", e);
         }
     }
 
