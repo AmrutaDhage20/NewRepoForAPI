@@ -1,4 +1,5 @@
 .idea/
 /target/
+/test-classes/
 logs/
 application.log
