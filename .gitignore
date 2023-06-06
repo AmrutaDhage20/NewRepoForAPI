@@ -2,6 +2,7 @@
 ## Java
 ##############################
 .mtj.tmp/
+.idea/
 *.class
 *.jar
 *.war
