@@ -1,4 +1,4 @@
-package org.example;
+package restapi_assignments;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;

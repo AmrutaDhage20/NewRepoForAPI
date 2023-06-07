@@ -1,4 +1,4 @@
-package org.example;
+package restapi_assignments;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -51,7 +51,7 @@ public class GetAllProductList {
     public void validateStatusCode() throws IOException {
         {
             baseURI = ConfigReader.getUrl();
-            Response response = RestAssured.get(ConfigReader.getUrl()).then().extract().response();
+            Response response = get(ConfigReader.getUrl()).then().extract().response();
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Status code is " + response.getStatusCode());
         }
