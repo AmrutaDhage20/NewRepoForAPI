@@ -15,6 +15,8 @@ import static io.restassured.RestAssured.given;
 
 public class PostAllProductList {
     private static String url;
+    private static final Logger logger = Logger.getLogger("PostAllProductList.class");
+    private Response response;
 
     public PostAllProductList() {
         try {
@@ -24,8 +26,6 @@ public class PostAllProductList {
         }
     }
 
-    private static final Logger logger = Logger.getLogger("PostAllProductList.class");
-
     @BeforeTest
     public void getLoggerDisplay() {
         PropertyConfigurator.configure("log4j2.properties");
@@ -33,7 +33,7 @@ public class PostAllProductList {
 
     @Test(priority = 1)
     public void validateResponseCode() {
-        Response response = given().when().post(url);
+        response = given().when().post(url);
         var results = response.body().asString();
         JSONObject jsonObject = new JSONObject(results);
         var responseCode = jsonObject.get("responseCode");
@@ -43,8 +43,9 @@ public class PostAllProductList {
 
     @Test(priority = 2)
     public void validateResponseMessage() {
-        var response = given().when().post(url).then().extract().asString();
-        JsonPath jsonResponse = new JsonPath(response);
+        response = given().when().post(url);
+        var results = response.body().asString();
+        JsonPath jsonResponse = new JsonPath(results);
         var responseMessage = jsonResponse.get("message");
         logger.info("The Response Message is: " + responseMessage);
         Assert.assertEquals(responseMessage, "This request method is not supported.");
