@@ -1,4 +1,4 @@
-package restapi_assignments;
+package org.assignments;
 
 import java.io.FileInputStream;
 import java.io.IOException;
