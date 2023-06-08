@@ -2,37 +2,17 @@ package org.assignments;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.json.JSONObject;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
 
-public class PostAllProductList {
-    private static String url;
-    private static final Logger logger = Logger.getLogger("PostAllProductList.class");
+public class PostAllProductList extends BaseFile {
     private Response response;
 
-    public PostAllProductList() {
-        try {
-            url = ConfigReader.getUrl();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    @BeforeTest
-    public void getLoggerDisplay() {
-        PropertyConfigurator.configure("log4j2.properties");
-    }
-
     @Test(priority = 1)
-    public void validateResponseCode() {
+    public void getNegativeResponseCode() {
         response = given().when().post(url);
         var results = response.body().asString();
         JSONObject jsonObject = new JSONObject(results);
@@ -42,7 +22,7 @@ public class PostAllProductList {
     }
 
     @Test(priority = 2)
-    public void validateResponseMessage() {
+    public void getResponseMessage() {
         response = given().when().post(url);
         var results = response.body().asString();
         JsonPath jsonResponse = new JsonPath(results);
