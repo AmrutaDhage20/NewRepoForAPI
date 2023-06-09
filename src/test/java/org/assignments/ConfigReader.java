@@ -1,4 +1,4 @@
-package org.example;
+package org.assignments;
 
 import java.io.FileInputStream;
 import java.io.IOException;
