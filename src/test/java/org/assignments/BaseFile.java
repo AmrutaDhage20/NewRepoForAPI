@@ -9,7 +9,10 @@ import org.testng.annotations.BeforeTest;
 import java.io.IOException;
 
 public class BaseFile {
-    protected static String url;
+    protected String url;
+    protected String brandId;
+    protected String brandName;
+
     protected static Logger logger = Logger.getLogger("BaseFile.class");
 
     @BeforeTest
