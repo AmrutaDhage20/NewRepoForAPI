@@ -20,6 +20,8 @@ public class GetAllBrandList {
     private String brandId;
     private String brandName;
 
+    private Response response;
+
     public GetAllBrandList() {
         try {
             url = ConfigReader.getUrl();
