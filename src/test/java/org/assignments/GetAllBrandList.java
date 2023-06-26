@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
 public class GetAllBrandList {
@@ -21,14 +22,6 @@ public class GetAllBrandList {
     private String brandName;
 
     private Response response;
-
-    public GetAllBrandList() {
-        try {
-            url = ConfigReader.getUrl();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     public GetAllBrandList(String brandId, String brandName) {
         this.brandId = brandId;
@@ -57,7 +50,7 @@ public class GetAllBrandList {
 
     @Test(priority = 3)
     public void validateContent() {
-        Response response = RestAssured.get(url).then().extract().response();
+        Response response = RestAssured.get(baseURI).then().extract().response();
         JsonPath jsonObject = new JsonPath(response.asString());
         var size = jsonObject.getInt("brands.size()");
         List<GetAllBrandList> brandData = new ArrayList<>();
@@ -81,7 +74,7 @@ public class GetAllBrandList {
 
     @Test(priority = 4)
     public void validateLength() {
-        var response = given().when().get(url).then().extract().asString();
+        var response = given().when().get(baseURI).then().extract().asString();
         JsonPath jsonResponse = new JsonPath(response);
         var idLength = jsonResponse.getInt("brands.id.size()");
         logger.info("The brand length is " + idLength);
