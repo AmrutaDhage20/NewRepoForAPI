@@ -14,7 +14,7 @@ public class ConfigReader {
         return properties;
     }
 
-    public static String getUrl() throws IOException {
+    public static String getBaseUrl() throws IOException {
         return getProperties().getProperty("baseURL");
     }
 }

@@ -9,13 +9,17 @@ import org.testng.annotations.BeforeTest;
 import java.io.IOException;
 
 public class BaseFile {
-    protected static String url;
+   // protected String url;
+    protected String brandId;
+    protected String brandName;
+    protected String baseUrl;
+
     protected static Logger logger = Logger.getLogger("BaseFile.class");
 
     @BeforeTest
     public void setup() {
         try {
-            url = ConfigReader.getUrl();
+            baseUrl = ConfigReader.getBaseUrl();
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Error while reading URL from ConfigReader", e);
         }
